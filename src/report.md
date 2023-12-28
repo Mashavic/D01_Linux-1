@@ -67,3 +67,13 @@
 
 ![](./image/Part3/P_3_7_1.png)
 
+## Part 4. OS Update
+1. Update the system packages to the latest version
+
+- sudo apt update
+- sudo apt dist-upgrade
+- sudo reboot
+
+![](./image/Part3/P_4_1_2.png)
+
+![](./image/Part3/P_4_1_1.png)
