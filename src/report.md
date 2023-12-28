@@ -1,4 +1,4 @@
-## №1. Установка ОС
+<h2>Part 1. Installation of the OS</h1>
 1. Узнайте версию Ubuntu, выполнив команду cat /etc/issue.
 2. ![](./image/Task_1.png)
 ## №2. Создание пользователя
