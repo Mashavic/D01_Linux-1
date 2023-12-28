@@ -74,6 +74,11 @@
 - sudo apt dist-upgrade
 - sudo reboot
 
-![](./image/Part3/P_4_1_2.png)
+![](./image/Part4/P_4_1_1.png)
 
-![](./image/Part3/P_4_1_1.png)
+![](./image/Part4/P_4_1_2.png)
+
+## Part 5. Using the **sudo** command
+
+1. ##### Allow user created in [Part 2](#part-2-creating-a-user) to execute sudo command.
+
