@@ -86,6 +86,6 @@
 - sudo vim /etc/hosts
 - sudo reboot 
 
-![](./image/Part4/P_5_1_1.png)
+![](./image/Part5/P_5_1_1.png)
 
-![](./image/Part4/P_5_1_2.png)
+![](./image/Part5/P_5_1_2.png)
