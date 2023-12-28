@@ -18,32 +18,56 @@
 
 ![](./image/Part2/P_2_2.png)
 
-## №3. Настройка сети ОС
-1. Задать название машины вида user-1         
-![](./3.1.png)        
-Чтобы изменить название машины были выполненые следующие команды:           
-* sudo vim /etc/hostname              
-* reboot        
-Резульат: ![](./3.2.png)
-2. Установить временную зону, соответствующую вашему текущему местоположению        
-![](./3.3.png)
-3. Вывести названия сетевых интерфейсов с помощью консольной команды        
-![](./3.4.png)
-* lo или local loopback (локальная петля). Служит для подключения по сети к этому же компьютеру и не требует дополнительной настройки;
-4. Используя консольную команду получить ip адрес устройства, на котором вы работаете, от DHCP сервера.        
-![](./3.5.png)
-* Dynamic Host Configuration Protocol (DHCP) — автоматический предоставляет IP адреса и прочие настройки сети (маску сети, шлюз и т.п) компьютерам и различным устройствам в сети.
-5. Определить и вывести на экран внешний ip-адрес шлюза (ip) и внутренний IP-адрес шлюза, он же ip-адрес по умолчанию (gw).
-* внешний ip-адрес шлюза (ip):        
-![](./3.6.png)
-* внутренний IP-адрес шлюза:        
-![](./3.7.png)
-6. Задать статичные (заданные вручную, а не полученные от DHCP сервера) настройки ip, gw, dns (использовать публичный DNS серверы, например 1.1.1.1 или 8.8.8.8).
-![](./3.8.png)         
-sudo vim /etc/netplan/00-installer-config.yaml        
-![](./3.9.png)        
-![](./3.10.png)        
-![](./3.11.png)
+## Part 3. Setting up the OS network
+1. Set the machine name as user-1
+         
+- sudo vim /etc/hostname
+- sudo vim /etc/hostname
+- reboot        
+   
+![](./image/Part3/P_3_1_1.png)  ![](./image/Part3/P_3_1_2.png)  
+
+2. Set the time zone corresponding to your current location.
+
+![](./image/Part3/P_3_2_1.png) ![](./image/Part3/P_3_2_2.png)
+
+3. Output the names of the network interfaces using a console command.
+
+- sudo apt install net-tools
+
+![](./image/Part3/P_3_3.png)
+
+- lo (loopback device) – виртуальный интерфейс, присутствующий по умолчанию в любом Linux. Он используется для отладки сетевых программ и запуска серверных приложений на локальной машине. С этим интерфейсом всегда связан адрес 127.0.0.1. У него есть dns-имя – localhost.
+
+4. Use the console command to get the ip address of the device you are working on from the DHCP server.
+
+![](./image/Part3/P_3_4.png)
+
+- Протокол динамической конфигурации узлов (Dynamic Host Configuration Protocol, DHCP) — это сетевой протокол, используемый для автоматического получения узлами IP-адресов и сетевой конфигурации с сервера.
+
+5. Define and display the external ip address of the gateway (ip) and the internal IP address of the gateway, aka default ip address (gw).
+
+* внешний ip-адрес шлюза (ip):    
+
+![](./image/Part3/P_3_5_1.png)
+
+* внутренний IP-адрес шлюза:    
+
+![](./image/Part3/P_3_5_2.png)
+
+6. Set static (manually set, not received from DHCP server) ip, gw, dns settings (use public DNS servers, e.g. 1.1.1.1 or 8.8.8.8).
+
+- sudo vim /etc/netplan/*.yaml
+
+![](./image/Part3/P_3_6_1.png) ![](./image/Part3/P_3_6_2.png)  
+
+7. Reboot the virtual machine. Make sure that the static network settings (ip, gw, dns) correspond to those set in the previous point.
+
+- reboot
+
+![](./image/Part3/P_3_7_1.png)
+
+
 ##  №4.  Обновление ОС
 1. Обновить системные пакеты до последней на момент выполнения задания версии
 ![](./4.png)
