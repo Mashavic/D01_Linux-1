@@ -22,8 +22,8 @@
 1. Set the machine name as user-1
          
 - sudo vim /etc/hostname
-- sudo vim /etc/hostname
-- reboot        
+- sudo vim /etc/hosts
+- sudo reboot        
    
 ![](./image/Part3/P_3_1_1.png)  ![](./image/Part3/P_3_1_2.png)  
 
@@ -82,3 +82,10 @@
 
 1. ##### Allow user created in [Part 2](#part-2-creating-a-user) to execute sudo command.
 
+- sudo vim /etc/hostname
+- sudo vim /etc/hosts
+- sudo reboot 
+
+![](./image/Part4/P_5_1_1.png)
+
+![](./image/Part4/P_5_1_2.png)
