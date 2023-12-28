@@ -89,3 +89,9 @@
 ![](./image/Part5/P_5_1_1.png)
 
 ![](./image/Part5/P_5_1_2.png)
+
+## Part 6. Installing and configuring the time service
+
+1. Set up the automatic time synchronisation service.
+
+![](./image/Part6/P_6_1.png)
