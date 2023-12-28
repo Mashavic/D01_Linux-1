@@ -99,3 +99,41 @@
 ![](./image/Part6/P_6_1.png)
 
 ## Part 7. Installing and using text editors
+
+1. Install **VIM** text editor (+ any two others if you like **NANO**, **MCEDIT**, **JOE** etc.)
+
+![](./image/Part7/P_7_1.png)
+
+2. Using each of the three selected editors, create a *test_X.txt* file, where X is the name of the editor in which the file is created. Write your nickname in it, close the file and save the changes.
+
+* vim test_VIM.txt
+* vim test_NANO.txt
+* vim test_MCEDIT.txt
+
+- VIM (ESC -> :wq -> ENTER)
+![](./image/Part7/P_7_2_VIM.png)
+- NANO (CTRL+O -> ENTER save file name -> CTRL+X)
+![](./image/Part7/P_7_2_NANO.png)
+- MCEDIT (F2 save -> YES -> F10 quit)
+![](./image/Part7/P_7_2_MCEDIT.png)
+
+3. Using each of the three selected editors, open the file for editing, edit the file by replacing the nickname with the "21 School 21" string, close the file without saving the changes.
+
+- VIM (i insert -> edit text -> ESC -> :q! -> ENTER)
+![](./image/Part7/P_7_3_VIM.png)
+- NANO (CTRL+X -> N NO)
+![](./image/Part7/P_7_3_NANO.png)
+- MCEDIT (F10 quit -> NO)
+![](./image/Part7/P_7_3_MCEDIT.png)
+
+4. Using each of the three selected editors, edit the file again (similar to the previous point) and then master the functions of searching through the contents of a file (a word) and replacing a word with any other one.
+
+- VIM (/text_search) | (:%s/visitor/not visitor)
+![](./image/Part7/P_7_4_1_VIM.png)
+![](./image/Part7/P_7_4_2_VIM.png)
+- NANO (CTRL+W -> search_text -> ENTER) | (ALT+R -> search_text -> ENTER -> new_text -> ENTER -> Y YES)
+![](./image/Part7/P_7_4_1_NANO.png)
+![](./image/Part7/P_7_4_2_NANO.png)
+- MCEDIT (F7 -> search_text -> ENTER) | (F4 -> search_text -> TAB -> new_text -> * all charset -> ENTER -> Replace)
+![](./image/Part7/P_7_4_1_MCEDIT.png)
+![](./image/Part7/P_7_4_2_MCEDIT.png)
