@@ -1,7 +1,10 @@
-<h2>Part 1. Installation of the OS</h1>
-1. Узнайте версию Ubuntu, выполнив команду cat /etc/issue.
-2. ![](./image/Task_1.png)
-## №2. Создание пользователя
+## Part 1. Installation of the OS
+1. - Check Ubuntu version by running the command \
+  `cat /etc/issue`
+2. - Add a screenshot of the command output to the report.
+    ![](./image/Task_1.png)
+
+## Part 2. Creating a user
 1. Вставьте скриншот вызова команды для создания пользователя.
 ![](./2.1.png)
 2. Новый пользователь должен быть в выводе команды 
