@@ -82,6 +82,8 @@
 
 1. ##### Allow user created in [Part 2](#part-2-creating-a-user) to execute sudo command.
 
+* Sudo — это утилита, предоставляющая привилегии root для выполнения административных операций в соответствии со своими настройками. Она позволяет легко контролировать доступ к важным приложениям в системе. По умолчанию, при установке Ubuntu первому пользователю (тому, который создаётся во время установки) предоставляются полные права на использование sudo. Т.е. фактически первый пользователь обладает той же свободой действий, что и root.
+
 - sudo vim /etc/hostname
 - sudo vim /etc/hosts
 - sudo reboot 
@@ -95,3 +97,5 @@
 1. Set up the automatic time synchronisation service.
 
 ![](./image/Part6/P_6_1.png)
+
+## Part 7. Installing and using text editors
