@@ -1,15 +1,23 @@
 ## Part 1. Installation of the OS
-1. - Check Ubuntu version by running the command \
+1. Check Ubuntu version by running the command \
   `cat /etc/issue`
-2. - Add a screenshot of the command output to the report.
-    ![](./image/Task_1.png)
+
+2. Add a screenshot of the command output to the report.
+
+![](./image/Part1/P_1.png)
 
 ## Part 2. Creating a user
-1. Вставьте скриншот вызова команды для создания пользователя.
-![](./2.1.png)
-2. Новый пользователь должен быть в выводе команды 
-cat /etc/passwd
-3. ![](./2.2.png)
+1. Add a screenshot of command call to create user.
+
+![](./image/Part2/P_2_1.png)
+
+2. The new user must be in the output of the command: \
+  `cat /etc/passwd`
+  
+3. Add a screenshot of the command output.
+
+![](./image/Part2/P_2_2.png)
+
 ## №3. Настройка сети ОС
 1. Задать название машины вида user-1         
 ![](./3.1.png)        
