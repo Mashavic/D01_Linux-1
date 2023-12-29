@@ -140,15 +140,82 @@
 
 - VIM (/text_search) | (:%s/visitor/not visitor)
 
+
 ![](./image/Part7/P_7_4_1_VIM.png)
 ![](./image/Part7/P_7_4_2_VIM.png)
 
+
 - NANO (CTRL+W -> search_text -> ENTER) | (ALT+R -> search_text -> ENTER -> new_text -> ENTER -> Y YES)
+
 
 ![](./image/Part7/P_7_4_1_NANO.png)
 ![](./image/Part7/P_7_4_2_NANO.png)
 
+
 - MCEDIT (F7 -> search_text -> ENTER) | (F4 -> search_text -> TAB -> new_text -> * all charset -> ENTER -> Replace)
+
 
 ![](./image/Part7/P_7_4_1_MCEDIT.png)
 ![](./image/Part7/P_7_4_2_MCEDIT.png)
+
+
+## Part 8. Installing and basic setup of the **SSHD** service
+
+1. Install the SSHd service.
+- sudo apt install openssh-server
+
+2. Add an auto-start of the service whenever the system boots.
+- sudo systemctl restart ssh (рестар службы)
+- sudo systemctl enable ssh (автоматический запуск)
+- reboot
+- systemctl is-active ssh (проверка на работу службы)
+
+
+![](./image/Part8/P_8_2.png)
+
+
+3. Reset the SSHd service to port 2022.
+- sudo find /etc/ -name "sshd_config" (проверка расположения конфиг-файла)
+- sudo mcedit /etc/ssh/sshd_config
+
+
+![](./image/Part8/P_8_3_1.png)
+
+
+- sudo systemctl restart sshd
+- sudo netstat -tupln | grep ssh
+
+
+![](./image/Part8/P_8_3_2.png)
+
+
+4. Show the presence of the sshd process using the ps command. To do this, you need to match the keys to the command.
+
+- ps -e | grep sshd
+
+* ps опции | grep параметр
+* ps — вводится вместе с аргументом -e для распечатки в терминал информации обо всех запущенных процессах вместе с их PID-кодами. 
+
+- Символ "|" используется для перенаправления вывода одной команды на вход другой команде.
+- Команда "grep" используется для поиска текстовых строк, соответствующих определенному шаблону. 
+
+5. Reboot the system.
+
+- reboot
+- netstat -tan
+
+![](./image/Part8/P_8_5.png)
+
+- "-t": Отображает только TCP-соединения.
+- "-a": Отображает все соединения и порты, включая активные и прослушивающие (listening).
+- "-n": Отображает номера портов и IP-адреса в числовом формате, а не в виде имен. 
+- Proto - Содержит тип протокола
+- Recv-Q - Счётчик байтов не скопированных программой пользователя из этого сокета.
+- Send-Q - Счётчик байтов, не подтверждённых удалённым узлом.
+- Local Address - Адрес и номер порта локального конца сокета.
+- Foreign Address - Адрес и номер порта удалённого конца сокета.
+- State - Состояние сокета.
+
+* LISTEN Сокет ожидает входящих подключений.
+* SYN_SENT Сокет, находящийся в режиме активной попытки установки подключения.
+* 0.0.0.0 - это немаршрутизируемый адрес IPv4, который используется в качестве адреса по умолчанию или адреса-заполнителя.
