@@ -334,4 +334,19 @@
 3. /var/log/auth.log
 - sudo mcedit /var/log/auth.log
 
+
+- sudo systemctl restart sshd
+- sudo mcedit /var/log/syslog
+
 ![](./image/Part14/P_14.png)
+
+## Part 15. Using the **CRON** job scheduler
+1. Using the job scheduler, run the uptime command in every 2 minutes.
+-crontab -e
+
+![](./image/Part15/P_15_1_1.png)
+![](./image/Part15/P_15_1_2.png)
+
+2. Remove all tasks from the job scheduler.
+
+![](./image/Part15/P_15_2.png)
