@@ -324,3 +324,14 @@
 
 ![](./image/Part13/P_13_2_var_log.png)
 
+## Part 14. Working with system logs
+1. /var/log/dmesg
+- sudo mcedit /var/log/dmesg
+
+2. /var/log/syslog
+- sudo mcedit /var/log/syslog
+
+3. /var/log/auth.log
+- sudo mcedit /var/log/auth.log
+
+![](./image/Part14/P_14.png)
