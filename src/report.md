@@ -219,3 +219,47 @@
 * LISTEN Сокет ожидает входящих подключений.
 * SYN_SENT Сокет, находящийся в режиме активной попытки установки подключения.
 * 0.0.0.0 - это немаршрутизируемый адрес IPv4, который используется в качестве адреса по умолчанию или адреса-заполнителя.
+
+## Part 9. Installing and using the **top**, **htop** utilities
+
+1. Install and run the top and htop utilities.
+- From the output of the top command determine and write in the report:
+  - uptime -> 2 min
+  - number of authorised users -> 1 user
+  - total system load -> 0.04, 0.07, 0.03
+  - total number of processes -> 100 total
+  - cpu load -> 0.3%
+  - memory load -> 136.0 used / 316.7 buff/cache
+  - pid of the process with the highest memory usage -> 359 (top -o %MEM)
+  - pid of the process taking the most CPU time -> 1 (top -o %CPU)
+- Add a screenshot of the htop command output to the report:
+
+
+  ![](./image/Part9/P_9_1_1.png)
+
+
+  - sorted by PID, PERCENT_CPU, PERCENT_MEM, TIME
+
+
+  ![](./image/Part9/P_9_1_2_PID.png)
+  ![](./image/Part9/P_9_1_2_PERCENT_CPU.png)
+  ![](./image/Part9/P_9_1_2_PERCENT_MEM.png)
+  ![](./image/Part9/P_9_1_2_TIME.png)
+
+
+  - filtered for sshd process
+
+
+  ![](./image/Part9/P_9_1_3.png)
+
+
+  - with the syslog process found by searching
+
+
+  ![](./image/Part9/P_9_1_4.png)
+
+
+  - with hostname, clock and uptime output added
+
+
+  ![](./image/Part9/P_9_1_5.png)
