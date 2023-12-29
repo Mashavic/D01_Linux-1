@@ -306,3 +306,21 @@
 
 ![](./image/Part12/P_12_3.png)
 
+## Part 13. Installing and using the **ncdu** utility
+1. Install the ncdu utility.
+
+![](./image/Part13/P_13_1.png)
+
+2. Output the size of the /home, /var, /var/log folders.
+- ncdu /home
+
+![](./image/Part13/P_13_2_home.png)
+
+- ncdu /var
+
+![](./image/Part13/P_13_2_var.png)
+
+- ncdu /var/log
+
+![](./image/Part13/P_13_2_var_log.png)
+
