@@ -263,3 +263,11 @@
 
 
   ![](./image/Part9/P_9_1_5.png)
+
+
+## Part 10. Using the **fdisk** utility
+
+1. Run the fdisk -l command.
+
+
+![](./image/Part10/P_10_1.png)
