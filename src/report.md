@@ -291,3 +291,18 @@
 
 ![](./image/Part11/P_11.png)
 
+## Part 12. Using the **du** utility
+1. Run the du command.
+- du
+
+![](./image/Part12/P_12_1.png)
+
+2. Output the size of the /home, /var, /var/log folders (in bytes, in human readable format)
+
+![](./image/Part12/P_12_2_1.png)
+![](./image/Part12/P_12_2_2.png)
+
+3. Output the size of all contents in /var/log (not the total, but each nested element using *)
+
+![](./image/Part12/P_12_3.png)
+
